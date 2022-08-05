@@ -1,0 +1,164 @@
+
+                           Working Outdials
+                           ----------------
+                            as of 12/29/94
+
+NPA          IP Address                   Instructions
+---          ----------                   ------------
+215          isn.upenn.edu                modem
+
+217          dialout.cecer.army.mil       atdt x,xxxXXXXX
+
+218          modem.d.umn.edu              atdt9,xxxXXXX
+
+303          yuma.acns.colostate.edu 3020
+
+412          gate.cis.pitt.edu            tn3270, 
+                                          connect dialout.pitt.edu, 
+                                          atdtxxxXXXX
+
+413          dialout2400.smith.edu        Ctrl } gets ENTER NUMBER: xxxxxxx
+
+502          outdial.louisville.edu
+
+502          uknet.uky.edu                connect kecnet
+                                          @ dial: "outdial2400 or out"
+
+602          acssdial.inre.asu.edu        atdt8,,,,,[x][yyy]xxxyyyy
+
+614          ns2400.acs.ohio-state.edu
+
+614          ns9600.acs.ohio-state.edu
+
+713          128.249.27.153               atdt x,xxxXXXX
+
+714          modem.nts.uci.edu            atdt[area]0[phone]
+
+804          ublan.virginia.edu           connect hayes, 9,,xxx-xxxx
+
+804          ublan2.acc.virginia.edu      connect telnet
+                                          connect hayes
+
+
+
+                           Need Password
+                           -------------
+
+206          rexair.cac.washington.edu    This is an unbroken password
+303          yuma.ACNS.ColoState.EDU      login: modem
+404          128.140.1.239                .modem8|CR
+415          annex132-1.EECS.Berkeley.EDU "dial1" or "dial2" or "dialer1"
+514          cartier.CC.UMontreal.CA      externe,9+number
+703          wal-3000.cns.vt.edu          dial2400 -aa
+
+
+                          Dead/No Connect
+                          ---------------
+
+201          idsnet
+202          modem.aidt.edu
+204          dial.cc.umanitoba.ca
+204          umnet.cc.manitoba.ca         "dial12" or "dial24"
+206          dialout24.cac.washington.edu
+207          modem-o.caps.maine.edu
+212          B719-7e.NYU.EDU              dial3/dial12/dial24
+212          B719-7f.NYU.EDU              dial3/dial12/dial24
+212          DIALOUT-1.NYU.EDU            dial3/dial12/dial24
+212          FREE-138-229.NYU.EDU         dial3/dial12/dial24
+212          UP19-4b.NYU.EDU              dial3/dial12/dial24
+215          wiseowl.ocis.temple.edu      "atz" "atdt 9xxxyyyy"
+218          aa28.d.umn.edu               "cli" "rlogin modem"
+                                          at "login:"  type "modem"
+218          modem.d.umn.edu              Hayes 9,XXX-XXXX
+301          dial9600.umd.edu
+305          alcat.library.nova.edu
+305          office.cis.ufl.edu
+307          modem.uwyo.edu               Hayes  0,XXX-XXXX
+313          35.1.1.6                     dial2400-aa or dial1200-aa
+                                          or dialout
+402          dialin.creighton.edu
+402          modem.criegthon.edu
+404          broadband.cc.emory.edu       ".modem8" or ".dialout"
+408          dialout.scu.edu
+408          dialout1200.scu.edu
+408          dialout2400.scu.edu
+408          dialout9600.scu.edu
+413          dialout.smith.edu
+414          modems.uwp.edu
+416          annex132.berkely.edu         atdt 9,,,,, xxx-xxxx
+416          pacx.utcs.utoronto.ca        modem
+503          dialout.uvm.edu
+513          dialout24.afit.af.mil
+513          r596adi1.uc.edu
+514          pacx.CC.UMontreal.CA         externe#9 9xxx-xxxx
+517          engdial.cl.msu.edu
+602          dial9600.telcom.arizona.edu
+603          dialout1200.unh.edu
+604          dial24-nc00.net.ubc.ca
+604          dial24-nc01.net.ubc.ca
+604          dial96-np65.net.ubc.ca
+604          gmodem.capcollege.bc.ca
+604          hmodem.capcollege.bc.ca
+609          128.119.131.11X (X= 1 - 4)   Hayes
+609          129.119.131.11x  (x = 1 to 4)
+609          wright-modem-1.rutgers.edu
+609          wright-modem-2.rutgers.edu
+612          modem_out12e7.atk.com
+612          modem_out24n8.atk.com
+614          ns2400.ircc.ohio-state.edu   "dial"
+615          dca.utk.edu                  dial2400 D 99k #
+615          MATHSUN23.MATH.UTK.EDU       dial 2400  d  99Kxxxxxxx
+616          modem.calvin.edu
+617          128.52.30.3                  2400baud
+617          dialout.lcs.mit.edu
+617          dialout1.princeton.edu
+617          isdn3.Princeton.EDU
+617          jadwingymkip0.Princeton.EDU
+617          lord-stanley.Princeton.EDU
+617          mpanus.Princeton.EDU
+617          mrmodem.wellesley.edu
+617          old-dialout.Princeton.EDU
+617          stagger.Princeton.EDU
+617          sunshine-02.lcs.mit.edu
+617          waddle.Princeton.EDU
+619          128.54.30.1                  atdt [area][phone]
+619          dialin.ucsd.edu              "dialout"
+703          modem_pool.runet.edu
+703          wal-3000.cns.vt.edu
+713          128.249.27.154               "c modem96"  "atdt 9xxx-xxxx"
+                                          or "Hayes"
+713          modem12.bcm.tmc.edu
+713          modem24.bcm.tmc.edu
+713          modem24.bcm.tmc.edu
+714          mdmsrv7.sdsu.edu             atdt 8xxx-xxxx
+714          modem24.nts.uci.edu
+714          pub-gopher.cwis.uci.edu
+801          dswitch.byu.edu              "C Modem"
+808          irmodem.ifa.hawaii.edu
+902          star.ccs.tuns.ca             "dialout"
+916          129.137.33.72
+916          cc-dnet.ucdavis.edu          connect hayes/dialout
+916          engr-dnet1.engr.ucdavis.edu  UCDNET <ret> C KEYCLUB <ret>
+???          128.119.131.11X              (1 - 4)
+???          128.200.142.5
+???          128.54.30.1                  nue, X to discontinue, ? for Help
+???          128.6.1.41
+???          128.6.1.42
+???          129.137.33.72
+???          129.180.1.57
+???          140.112.3.2                  ntu            <none>
+???          annexdial.rz.uni-duesseldorf.de
+???          dial96.ncl.ac.uk
+???          dialout.plk.af.mil
+???          ee21.ee.ncu.edu.tw           cs8005
+???          im.mgt.ncu.edu.tw            guest           <none>
+???          modem.cis.uflu.edu
+???          modem.ireq.hydro.qc.ca
+???          modems.csuohio.edu
+???          sparc20.ncu.edu.tw           u349633
+???          sun2cc.nccu.edu.tw           ?
+???          ts-modem.une.oz.au
+???          twncu865.ncu.edu.tw          guest           <none>
+???          vtnet1.cns.ut.edu            "CALL" or "call"
+
+

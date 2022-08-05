@@ -1,0 +1,698 @@
+
+                  The anon.penet.fi Anonymous Server
+                  ==================================
+
+Please, do not overload the server. The absolute limit of messages per day
+is 30. The size limit of the mailings is 48K. Please, keep the traffic
+below these two limits.
+
+Index:
+
+1) Safe Posting! (*Please read this section!*)
+
+2) How to get an anon ID and help
+
+3) Password
+        3.1) How to set up a password
+        3.2) How to use a password
+        3.3) How to change your password
+        3.4) Typical mistakes made in password usage
+
+4) Mailing anonymously
+        4.1) recipient@anon.penet.fi
+        4.2) X-Anon-To: recipient
+
+5) Posting articles to news anonymously
+        5.1) news.group@anon.penet.fi
+        5.2) X-Anon-To: news.group
+
+6) Testing how the service works
+
+7) Security
+
+8) Miscellaneous
+        8.1) Nickname
+        8.2) Available newsgroups
+        8.3) Talk of anon servers on newsgroups
+        8.4) What if your e-mail address changes?
+        8.5) inews error
+        8.6) Mailing non-anonymously
+        8.7) Eudora Users
+        8.8) Deallocating your anonymous ID from the system
+
+NEW:
+#I have provided specific examples of what imaginary user joan@commercial.com
+#would do to establish different things.  She wants a nickname "Ladylike" and
+#password "45jhkg3425". She has the anon id an48@anon.penet.fi.
+
+Other version of help text available in other languages:
+- German text available from german@anon.penet.fi (deutsch@anon.penet.fi).
+- Italian text available from italian@anon.penet.fi (italiano@anon.penet.fi).
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+1) Safe posting!
+================
+
+Yes, another anonymous server. Why?  Well, several well-known servers have
+bitten the dust recently. And most of them have served only a very limited
+subset of newsgroups, and mail only to "registered", anonymous users.
+
+Due to reasons too complicated to mention here I wanted to set up an anonymous
+server for the Scandinavian user community. I got hold of a pre-release copy
+of one of the server packages. As the version I got relied heavily on the
+advanced features of MMDFII, I had to modify it quite a bit. While hacking
+around, I removed the restriction of only supporting selected newsgroups.
+Within a week of startup, the server had been discovered by transatlantic
+users, and more recent stats show European users are definitely a minority.
+
+So what does the anon server really do? Well, it provides a front for
+sending mail messages and posting news items anonymously. As you send your
+very first message to the server, it automatically allocates you an ID of
+the form anNNN, and sends you a message containing the allocated ID. This ID
+is used in all your subsequent anon posts/mails. Any mail messages sent to
+your-ID@anon.penet.fi gets redirected to your original, real address. Any
+reply is of course anonymized in the same way, so the server provides a
+double-blind. You will not know the true identity of any user, unless she
+chooses to reveal her identity explicitly.
+
+In the anonymization process all headers indicating the true originator are
+removed, and an attempt is made to remove any automatically-included
+signatures, by looking for a line starting with two dashes (--), and zapping
+everything from there on. But if your signature starts with anything else,
+it's your own responsibility to remove it from your messages.
+
+The user-ID database is based on RFC822-ized forms of your originating
+address. This may cause problems for some users, either because their site
+is not properly registered in the name servers, resulting in
+non-deterministic addresses, or because their mail router doesn't hide the
+identity of individual workstations, resulting in different originating
+addresses depending on which workstation you mail from. Talk to your
+administrator. If that doesn't help, let me know, and I will make a manual
+re-mapping.
+
+You might wonder about the sense of using a server out somewhere, as the
+song goes, "so close to Russia, so far from Japan". Well, the polar bears
+don't mind, and the ice on the cables don't bother too much :-)
+Well, in fact, as we live in a wonderfully networked world, the major delay
+is not going over the atlantic, but my local connection to the Finnish EUnet
+backbone, fuug.fi. Once you reach a well-connected host, such as
+uunet.uu.net, there's a direct SMTP connection to fuug.fi. My connection to
+fuug.fi is currently a polled connection over ISDN, soon to be upgraded to
+on-demand-SMTP/NNTP. But for now, expect a turn-around delay of 2-4 hours for
+trans-atlantic traffic.
+
+As the server was originally intended to be used by scandinavians, it
+includes help files for various languages. This works by using the
+language in question as the address. So to get the german help file,
+send a message to german@anon.penet.fi (or deutsch@anon.penet.fi).
+Support for new languages is added every now and then, when I find
+volunteers to do the translation. Any new ones?
+
+I have gotten a couple of comments about permitting anonymous postings to
+technical groups. I can only answer that I believe very firmly that it's not
+for me to dictate how other people ought to behave. Somebody might have a
+valid reason for posting anonymously to a group I might consider "technical".
+But remember anonymous postings are a privilege, and use them accordingly.
+I believe adult human beings can behave responsibly. Please don't let me down.
+
+
+
+
+2) How to get an ID and help
+============================
+
+Send a message to "ping@anon.penet.fi" to get an anonymous ID.  If you
+already have an anon id, this will send you a response with your anonymous
+ID in the message body.
+
+If you send a message to "help@anon.penet.fi", you will receive this help
+text.
+
+If you want help or have some questions, send mail to "admin@anon.penet.fi".
+Mail to "admin" goes directly to me unanonymized, and can be used to
+report problems. If you want to send mail to me anonymously, you can use
+"an0" or "an1".
+
+#Examples:
+# To: ping@anon.penet.fi
+# To: help@anon.penet.fi
+
+
+
+3) Password
+===========
+
+Once you have set up a password you have to use it in every single
+message you send via anon.penet.fi.  It is advisable that you establish
+a password right away.
+
+3.1) To set up a password
+-=-=-=-=-=-=-=-=-=-=-=-=-
+
+The password can be any string of upper- or lowercase characters and digits.
+
+Syntax:
+- -----
+
+Mailer's headers:       To: password@anon.penet.fi
+                        Subject: <whatever you wish>
+
+Message body:           <your password>
+
+#Example:
+# To: password@anon.penet.fi
+# Subject: setting my password
+#message body:
+# 45jhkg3425
+
+
+3.2) How to use a password
+-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Once you have set your password, you must include it in all your messages, in
+a "X-Anon-Password:" line. As with the "X-Anon-To:" line, it can be either a
+part of the header or as the first two lines of the message text.
+
+Syntax:
+- -----
+
+Mailer's headers:       To: anon@anon.penet.fi
+                        Subject: <whatever you wish>
+
+Message body:           X-Anon-Password: <your password>
+                        X-Anon-To: <whoever you wish>
+
+#Example:
+# To: anon@anon.penet.fi
+# Subject: my day
+#message body:
+# X-Anon-Password: 45jhkg3425
+# X-Anon-To: john@other.com
+
+If you find this is too much of a hassle, and are not too concerned about the
+confidentiality of your anon ID, you may set the password to "none".  If your
+password is none, you don't have to include "X-Anon-Password:" or the password
+in any form.  But I must remind you that it will leave your anon ID vulnerable.
+Should you wish to use a password again, you can do so by mailing the new
+password to "password@anon.penet.fi".
+
+The problem isn't that someone will find out your real e-mail address, but your
+real e-mail address can be faked and ..
+
+1) the faker finds out what anon ID you have.
+2) an anonymous post by your ID is send to a newsgroup.
+3) (junk/harrassing/threatening) mail is send with your anon ID to different
+   people.
+
+This someone can be your friend, a person who has seen your posts or maybe
+a subscriber to the same mailing list you are on.  In the other words, that
+"someone" can be ANYONE.
+
+
+3.3) To change your password
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Syntax:
+- -----
+
+Mailer's headers:       To: password@anon.penet.fi
+                        Subject: <whatever you wish>
+
+Message body:           X-Anon-Password: <your password>
+                        <your new password>
+
+
+#Example:
+# To: password@anon.penet.fi
+# Subject: changing my password
+#message body:
+# X-Anon-Password: 45jhkg3425
+# ot3erpa44word
+
+
+3.4) Typical mistakes made in password usage
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+If you get bounced mail because of a password failure, please check to see
+if you are making one or *more* of the mistakes listed below.  If you don't
+recognize your mistake and you are still receiving password failure messages,
+please send the *full* error message with all headers intact to
+"admin@anon.penet.fi".
+
+        1) Do NOT put Subject: or other fields (i.e. To:) into the message
+           body, use the header fields provided by your mailer.  Only the
+           "X-Anon-To:" and "X-Anon-Password:" can put be in the message
+           body and still be processed.
+
+        2) Do not put the "X-Anon"-fields into the "Subject:" or "To:" field.
+           Use the first two lines of the message body.
+
+        3) The "X-Anon"-fields have to start at the beginning of the line.
+           Do NOT put a space or tab before it.
+
+        4) When typing the "X-Anon"-fields, put all the letters either
+           in lower case or upper case.  You may capitalize the first letter
+           of the three words but the use of any other combination will result
+           in a failure message.
+
+        5) "X-Anon-To:" field has to be *one* line.
+
+
+
+4) Mailing anonymously
+======================
+
+You need to set up a password to mail users that do not have a
+"an<NUMBER>@anon.penet.fi" address. (Please, see the section 3: Password
+on how to set up and use a password.)
+
+"Cc:"- and "Bcc:"-field recipients receive your letter non-anonymized as
+your mailer sends those letters straight to the recipient and not via
+anon.penet.fi.
+
+There are two ways to send mail anonymously:
+
+
+4.1) recipient@anon.penet.fi
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Syntax of sending to an anon.penet.fi user:
+- -----------------------------------------
+
+Mailer's headers:       To: an<NUMBER>@anon.penet.fi
+                        Subject: <whatever you wish>
+
+Message body:           <X-Anon-Password: <your password> if password set up>
+                        <your message here>
+
+#Example:
+# To: an1@anon.penet.fi
+# Subject: sending a message
+#message body:
+# X-Anon-Password: 45jhkg3425 <this line only if joan@commercial.com has already
+#                              set the above password>
+# blah blah blah
+
+
+Syntax of sending to a known user:
+- --------------------------------
+
+Mailer's headers:       To: user%host.domain@anon.penet.fi
+                        Subject: <whatever you wish>
+
+Message body:           X-Anon-Password: <your password>
+                        <your message here>
+
+#Example:
+# To: john%other.com@anon.penet.fi
+# Subject: what's up?
+#message body:
+# X-Anon-Password: 45jhkg3425
+# blah blah blah
+
+
+4.2) X-Anon-To: recipient
+-=-=-=-=-=-=-=-=-=-=-=-=-
+
+This method is more secure and will preserve your anonymity better.
+
+Syntax of sending to an anon.penet.fi user:
+- -----------------------------------------
+
+Mailer's headers:       To: anon@anon.penet.fi
+                        Subject: <whatever you wish>
+
+Message body:           <X-Anon-Password: <your password> if password set up>
+                        X-Anon-To: an<NUMBER>
+                        <your message here>
+
+#Example:
+# To: anon@anon.penet.fi
+# Subject: sending a message
+#message body:
+# X-Anon-To: an1
+# X-Anon-Password: 45jhkg3425 <this line only if joan@commercial.com has already
+#                              set the above password>
+# blah blah
+
+
+Syntax of sending to a known user:
+- --------------------------------
+
+Mailer's headers:       To: anon@anon.penet.fi
+                        Subject: <whatever you wish>
+
+Message body:           X-Anon-Password: <your password>
+                        X-Anon-To: user@host.domain
+                        <your message here>
+
+#Example:
+# To: anon@anon.penet.fi
+# Subject: what's up
+#message body:
+# X-Anon-Password: 45jhkg3425
+# X-Anon-To: john@other.com
+# blah blah
+
+
+
+5) Posting articles to news anonymously
+=======================================
+
+
+To be able to post to newsgroups on usenet, you need to set up a password.
+Please, see the section 3: Password on how to set up and use a password.
+
+References: headers do work, so they can (and should) be used to maintain
+reply threads.  If you cannot add headers, you cannot include References:
+
+There are two ways to post an anonymous article to news:
+
+
+5.1) news.group@anon.penet.fi
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Syntax:
+- -----
+
+Mailer's headers:       To: news.group@anon.penet.fi
+                        Subject: <whatever you wish>
+
+Message body:           X-Anon-Password: <your password>
+                        <your message here>
+
+#Example:
+# To: alt.test@anon.penet.fi
+# Subject: IGNORE: testing
+#message body:
+# X-Anon-Password: 45jhkg3425
+# blah blah
+
+
+5.2) X-Anon-To: news.group
+-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Using X-Anon-To: method enables you to crosspost. When putting multiple
+newsgroups on the X-Anon-To: line, please use only a comma as a separator
+without any spaces.
+
+Syntax:
+- -----
+
+Mailer's headers:       To: anon@anon.penet.fi
+                        Subject: <whatever you wish>
+
+Message body:           X-Anon-Password: <your password>
+                        X-Anon-To: news.group
+                        <your message here>
+
+#Example:
+# To: anon@anon.penet.fi
+# Subject: IGNORE: testing
+#message body:
+# X-Anon-Password: 45jhkg3425
+# X-Anon-To: alt.test
+# blah blah
+
+OR
+
+                        X-Anon-Password: <your password>
+                        X-Anon-To: news.group,other.news.group
+                        <your message here>
+
+#Example:
+# To: anon@anon.penet.fi
+# Subject: IGNORE: testing
+#message body:
+# X-Anon-Password: 45jhkg3425
+# X-Anon-To: alt.test,misc.test,comp.test
+# blah blah
+
+
+
+6) Testing how the service works
+================================
+
+If you intend to mail/post something that might cost you your job or
+marriage or inheritance, *PLEASE* send a test message first. The software
+has been pretty well tested, but some mailers en-route (which are out of
+my control) can screw things up. And if you happen to find a problem,
+*please* for the sake of all the other users, *let me know asap*.
+
+And *please* use the appropriate test newsgroups, such as alt.test or
+misc.test. Yes, *you* might get excited by reading 2000 "This is a test.."
+messages on alt.sex, but I warn you that most psychologists consider this
+rather aberrant...
+
+Send a test message to
+
+        1) test@anon.penet.fi
+
+#Example:
+# To: test@anon.penet.fi
+# Subject: testing
+#message body:
+# X-Anon-Password: 45jhkg3425
+# blah blah
+
+        2) your anon account
+
+#Example:
+# To: an48@anon.penet.fi
+# Subject: testing
+#message body:
+# X-Anon-Password: 45jhkg3425 <only if the password is set up>
+# blah blah
+
+        3) your real e-mail address
+
+#Example:
+# To: anon@anon.penet.fi
+# Subject: testing
+#message body:
+# X-Anon-Password: 45jhkg3425
+# X-Anon-To: joan@commercial.com
+# blah blah
+                4) misc.test/alt.test or the like
+
+#Example:
+# To: alt.test@anon.penet.fi
+# Subject: testing
+#message body:
+# X-Anon-Password: 45jhkg3425
+# blah blah
+
+        5) any other test message or format you can think of
+
+
+
+7) Security
+===========
+
+Short of having everyone run a public-key cryptosystem such as PGP,
+there is no way to protect users from malicious administrators. You have to
+trust my personal integrity. Worse, you have to trust the administrators on
+every mail routing machine on the way, as the message only becomes anonymous
+once it reaches my machine. Malicious sysadmins and/or crackers could spy on
+SMTP mail channels, sendmail queues and mail logs. But as there are more
+than 7000 messages being anonymized every day, you have to be pretty perverted
+to scan everything...
+
+Another thing is mail failures. I've had cases of mail routers doing the wrong
+thing with % addresses, "shortcutting" the path to the destination site.
+This could cause your mail to go to the final destination without ever
+touching my server (and thus without getting anonymized). This can be avoided
+by using the X-Anon-To: method.
+
+And if your return address bounces for some reason (nameservers down,
+temporary configuration failures etc.), the original sender and/or
+postmasters on the way might get error messages showing your true
+identity, and maybe even the full message.
+
+There is at least one known way to discover the anon ID of a user. It involves
+being able to falsify your real identity, so it is not too easy to use, and it
+doesn't reveal the real address lurking behind an anon ID, but it can be used
+to discover what anon ID a certain user is using. To fix this problem, the
+server requires that you use a password when you try to mail to a
+non-anonymous user and when you try to post articles to news.
+
+Crackers are just too clever. Undoubtedly somebody is going to come
+up with some novel method....  Not much I can do about that...
+
+If you intend to mail/post something that might cost you your job or
+marriage or inheritance, *PLEASE* send a test message first. The software
+has been pretty well tested, but some mailers en-route (which are out of
+my control) can screw things up. And if you happen to find a problem,
+*please* for the sake of all the other users, *let me know asap*.
+(See section: 6 Testing how the service works for more information.)
+
+
+
+8) Miscellaneous
+================
+
+8.1) Nickname
+-=-=-=-=-=-=-
+
+Your e-mail address will be a impersonal code an<NUMBER>@anon.penet.fi,
+but you can choose a nickanem which will appear in parenthesis after the
+code name.
+
+This is how to set up the nickname:
+
+Remember, you're talking to a *robot*, put JUST your desired nickname
+into the subject field or otherwise you will get funny nicknames as
+"set my nickname to bunny".
+
+Syntax:
+- ----
+
+Mailer's headers:       To: nick@anon.penet.fi
+                        Subject: <your desired nickname>
+
+Message body:           <X-Anon-Password: <your password> if password set up>
+                        <whatever you wish>
+
+#Example:
+# To: nick@anon.penet.fi
+# Subject: Ladylike
+#message body:
+# X-Anon-Password: 45jhkg3425 <only if password is set up>
+# blah blah
+
+To change your nickname, just send a message to "nick@anon.penet.fi" with
+the "Subject:" YourNewNick.
+
+
+
+8.2) Available newsgroups
+-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Anon.penet.fi has all the newsgroups and can post to all the newsgroups that
+aren't local to your area.  The only world-wide newsgroups anon.penet.fi
+cannot post to are the moderated newsgroups, the ones that have voted not to
+receive anonymous articles (there are only 5), and binary newsgroups (because
+of the volume).
+
+
+8.3) Talk of anon servers in newsgroups
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+If you have access to USENET and the following newsgroups, you can ask
+questions of anon.penet.fi and other anonymous servers.  I follow these
+newsgroups and try to answer all questions and inform of changes at
+anon.penet.fi.  Questions of a more personal nature can be send to the
+"admin@anon.penet.fi" address.
+
+        alt.anonymous.messages
+        alt.privacy.anon-server
+        alt.anonymous
+
+
+8.4) What if your e-mail address changes?
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+I can change the address behind your anonymous ID to reflect your new e-mail
+address.
+
+>From your new account, send mail to "admin@anon.penet.fi" and include the
+following information:
+
+        Old e-mail address:
+        Anon ID of the old e-mail address:
+        Password of that anon ID:
+
+
+8.5) inews error
+-=-=-=-=-=-=-=-=
+
+If you get a bounced message stating something about an "inews" error, there
+are two possible reasons for it:
+
+        1) There is no such newsgroup, at least at anon.penet.fi.
+        2) The newsgroup is moderated, so it is not possible to post to it
+           the regular way.
+
+Please, check your spelling.
+
+If you get an "inews" error of the sort "testpost", you have tried to post
+an article that has "test" in the "Subject:" field and less than 10 written
+lines.  Please, submit test for the appropriate test groups such as alt.test,
+misc.test etc.
+
+
+8.6) Mailing non-anonymously
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+If you want to send mail to an an<NUMBER>@anon.penet.fi and do not want to
+reveal or get an anonymous ID, you should mail you e-mail to
+        na<NUMBER>@anon.penet.fi.
+
+For example: if you want to mail a user with the anonymous ID 60 and you want to
+do it in non-anonymous format (i.e. so that your real name and address appear
+at the headers of the mail), then send mail to: "na60@anon.penet.fi" and NOT
+"an60@anon.penet.fi". Do NOT include your anon.penet.fi password with this
+mail!
+
+#Example:
+# To: na48@anon.penet.fi
+# Subject: testing
+#message body:
+# blah blah
+
+
+
+8.7) Eudora users
+-=-=-=-=-=-=-=-=-
+
+Please, do not change your configuration for the "From:" field.  If you change
+the "From:" field to look like your anonymous ID, you are not completely
+anonymized.  If you *must* do something to the "From:" field, just put your
+real e-mail address there and let anon.penet.fi take care of the anonymizing.
+
+In the other words, when you send your letter to be anonymized, it *MUST*
+have your real e-mail address in the From: field.
+
+#Example:
+# From: joan@commercial.com
+# To: anon@anon.penet.fi
+# Subject: testing
+#message body:
+# X-Anon-Password 45jhkg3425
+# X-Anon-To: john@other.com
+# blah blah
+
+
+
+8.8) De-allocating your anon ID from the system
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+To have your anonymous ID to be removed from the anon.penet.fi system you need
+to send a message to "remove@anon.penet.fi".  The mail requires the
+"X-Anon-Password:" field if you have set up a password.  If you cannot remember
+your password send your de-allocation request to "admin@anon.penet.fi".
+
+We would appreciate it if you add a couple of lines and explain to us the
+purpose for which you have used anon.penet.fi.
+
+A word of warning concerning de-allocation.  There is a random waiting period
+to catch hit & runs.  Do not think you can escape the flames by asking for
+removal right after your inappropriate article.  There are those that need
+the service, please do not ruin this for them!
+
+#Example:
+# To: remove@anon.penet.fi
+# Subject: remove my id
+#message body:
+# X-Anon-Password: 45jhkg3425
+# blah blah
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+If you think these instructions are unclear and confusing, you are right. If
+you come up with suggestions for improving this text, please mail me! Remember
+English is my third language...
+
+Safe postings!
+
+        Julf

@@ -1,0 +1,765 @@
+
+
+
+               "Frequently Asked Questions About Red Boxing v.010"
+                     by Mr. Sandman (an132432@anon.penet.fi)
+                                     4/30/95
+
+                                -={DISCLAIMER}=-
+
+     I, the USENET Group, and the BBS/FTP directory containing this file are
+not responsible, in any way, for the abuse of information contained in this
+file.  This file was written to satisfy the curiosities of new-comers to the
+alt.2600 USENET group and to stop all of the repetitive message threads
+regarding Red Boxes.  I, the USENET Group, and the BBS/FTP directory
+containing this file do not condone the use of ANY illegal device or
+disregarding of the law.  If one abuses this info, they must accept FULL
+responsibility for their actions.  If one cannot accept FULL responsibility
+for their actions, they must stop reading this information now.
+
+                                 -={Contents}=-
+
+     I.     What is a Red Box?
+     II.    How do I Build a Red Box?
+              a) The Radio Shack Tone Dialer Red Box
+              b) The Radio Shack Tone Dialer White/Red Box
+  U           c) The Radio Shack Tone Dialer White/Red Box via Mercury Switch
+  U           e) The Hallmark Recordable Card Red Box
+     III.   How much does a Red Box Cost?
+              a) The Cost to Construct a Red Box
+              b) The Cost to Purchase a Red Box
+     IV.    Is any Type of Red Box Better than Another?
+     V.     How do I use a Red Box?
+  U           a) Local Calls
+              b) Non-Local and Long Distance Calls
+              c) International Calls
+     VI.    Can I Use my Red Box from my Home Phone?
+     VII.   Can I Call 1-900 Numbers With a Red Box?
+     VIII.  Who is Billed for the Calls I Make With a Red Box?
+     IX.    What is the Legality of Red Boxing?
+     X.     What are the Chances of Getting Caught Red Boxing?
+     XI.    I Put the Red Box Tones on Tape. It Does not Work. Why not?
+     XII.   Will an HP48G Calculator Work as a Red Box?
+     XIII.  My Red Box does not Work from some Pay Phones. Why not?
+              a) COCOT Phones
+              b) Digital Pay Phones
+              c) Pay Phone/Phone # Flagging
+     XIV.   I Have a Really Cool Tone Program! Why Won't Every Tone Work?
+     XV.    Credits
+     XVI.   Conclusion
+     XVII.  UUENCODEd and BINHEXed Files "part [2/2]"
+              a) Red Box Schematics in GIF format
+              b) Red Box Quarter Tones for Soundblaster
+              c) Red Box Quarter Tones for Macintosh
+
+                * = New since last release
+                U = Updated since last release
+
+          I. What Is a Red Box?
+
+     A Red Box is an electronic device that produces the tones which tell a pay
+phone that money has been inserted.  Depending upon the type of Red Box, it is
+possible for a Red Box to generate the tones for a nickel, dime, and quarter.
+Each coin is recognized by producing the 1700+2200mhz tones in different
+patterns.  The Quarter tone is a 1700 and 2200 mhz tone that stays on for
+33ms, off for 33ms, and is repeated five times. The Dime tone uses the
+same tones, stays on for .06 seconds, off for .06 seconds, and is repeated
+twice.  The Nickle tone uses the same tones and only stays on for .06
+seconds.  In a nutshell, a Red Box is a device that allows you to make free
+telephone calls by tricking the phone into thinking money has been deposited.
+
+          II. How do I Build a Red Box?
+
+     The construction of a Red Box is not too hard.  There are basically two
+different types of Red Boxes people are using today which are either Radio Shac
+k
+Tone Dialer Red Boxes or Hallmark Recordable Card Red Boxes.  This file will
+tell you how to construct both.
+
+          a) The Radio Shack Tone Dialer Red Box
+
+*     A very simple modification to Radio Shack pocket tone dialer part #43-
+146 (roughly $25) can make it into a red box.  The modification consists of
+changing the crystal frequency used to generate the microprocessor's
+timing.  To make this modification you will need a Phillips screwdriver, a
+flat head screwdriver, a soldering iron, a pair of long nose pliers, a
+pair of wire cutters and a 6.5536, 6.5 (more accurate), or 6.49 (most
+accurate) megahertz crystal.
+
+     Orient the dialer with the keypad down and the speaker at the top.
+Remove the battery compartment cover (and any batteries) to expose two
+screws.  Remove these two screws and the two on the top of the dialer near
+the speaker.  There are four plastic clips that are now holding the two
+halves of the dialer together.  Push on the two bottom clips near the
+battery compartment and pull up to separate the bottom part.  Now slide a
+flat screwdriver into the seam on the left starting from the bottom and
+moving towards the top.  (You may have to do this on the right side as
+well.)
+
+     When the two halves separate, slide the speaker half underneath the
+other half while being careful not to break the wires connecting the two.
+Locate the cylindrical metallic can (it's about half an inch long and an
+eighth of an inch in diameter) and pull it away from the circuit board to
+break the glue that holds it in place.  Unsolder this can, which is a
+3.579545 MHz crystal, from the circuit board.
+
+     The hard part of this modification is getting the new crystal to fit
+properly.  If you are using the 6.5 MHz crystal, it is possible for the
+crystal to fit next to the biggest capacitor or the LED.  However, if you
+are using the 6.5536 MHz crystal, you may need to make some room. Bend the
+three disk capacitors over,[And out of the way the best you can, making room
+for the new crystal.  You may need to remove the screw in the way as well.]
+Since the 6.5536 MHz crystal is probably much bigger than the crystal you are
+replacing, you will need to bend the leads on the new crystal so that they
+will match up will the pads on the circuit board. Place the new crystal on
+the circuit board by soldering it in place.  As an added touch you might
+peel the QC sticker off of the PC board and place it on top of the crystal.
+Now carefully snap the two halves back together while checking to make sure
+that none of the wires are getting pinched or are in the way of the screw
+holes.  Put the case screws back ion and insert three AAA batteries into
+the battery compartment.
+     You dialer is now ready to test.  Switch the unit on.  The LED on the
+dial pad side should be lit.  Set the lower slide switch to STORE mode.
+Press the MEMORY button on the dial pad.  Press the * key five times.
+Press the MEMORY key again and then press the P1 key.  A beep tone when any
+key is pressed and a long beep should sound after the P1 key has been
+pressed to indicate that the programming sequence was performed correctly.
+
+     Switch the unit into DIAL mode.  press the P1 key, and five tone
+pulses that sound remarkably like coin tones should come out of the
+speaker.  I usually program P1 to be four quarters (insert one or two
+PAUSE's between each set of five tones), P2 to be two quarters, and P3 as
+one quarter.  Of course, you can no longer use the unit to generate touch
+tones.....
+
+     The crystal is available from Fry's Electronics in Freemont, CA for
+$0.89 plus the charge for UPS Red or Blue.  Their number is 415-770-3763.
+I would suggest buying five, some for future use and some just in case you
+cut the leads too short when trying this project. *(1)
+
+Other Companies where you can obtain the 6.5536mhz crystal:
+*
+Digi-Key
+701 Brooks Avenue South
+P.O. Box 677
+Thief River Falls, MN 56701-0677
+(80)344-4539
+Part Number:X415-ND    /* Note: 6.500Mhz and only .197 x .433 x .149! */
+Part Number:X018-ND
+
+JDR Microdevices:
+2233 Branham Lane
+San Jose, CA 95124
+(800)538-5000
+Part Number: 6.5536MHZ
+
+Tandy Express Order Marketing
+401 NE 38th Street
+Fort Worth, TX 76106
+(800)241-8742
+Part Number: 10068625
+*(2)
+
+[ The UUENCODEd format of the Red Box GIF file. Is pasted to the end of this
+   FAQ. It is a color schematic which may help you out a bit when you open
+   up the Radio Shack Tone Dialer and start working on it.  To put it back
+   in GIF format, you must have either the DOS UUDECODE program or access to
+   the UNIX UUDECODE program. ]
+
+          b) The Radio Shack Tone Dialer Red/White Box
+
+     This type of Red Box is slightly better than the standard
+Tone Dialer conversion. However, the mercury switch version is better. I
+would not recomend beuilding this type of Red Box unless you cannot build
+the mercury switch Red Box.
+
+* A true phreak always has a DTMF tone dialer at hand..along with a red box!
+My personal favorite is the COMBO-BOX (red box plus DTMF). Take a Radio Shack
+Tone Dialer with memory and open up the back. Remove the little 3.579 MHz
+crystal (looks like a metalcylinder..unsolder it) and solder on a couple of
+thin, insulated wires where the crystal was attached. Then, thread the wires
+thru one of the "vents" in the back of the tone dialer. Get ahold of a 6.5536
+MHz crystal, some quick drying epoxy, and a Radio Shack mini Toggle Switch,
+DPDT, cat. no 275-626
+
+Close the tone dialer, with the two wires sticking out one of the back vents
+and screw it up tight. Now, attach the crystals and wires to the switch like
+this with solder:
+                              I^^^^^I
+                              I      xx  <3.579 crystal>small one
+                              I     I
+ toggle switch    ->   oooooo X      xxxxs <two wires>
+                              I     I
+                              I      xx  <6.5536 crystal>big one
+                              I     I
+                               ^^^^^^
+
+Each "xx" prong in the diagram is actually TWO prongs. Hook up the two leads
+from the crystals to separate prongs (same with the wires).
+
+Now, epoxy this gizmo to the side of the tone dialer use ALOT of epoxy, as you
+must make the switch/crystals essentially EMBEDDED in epoxy resin. like this:
+
+
+Front View ->       ----------------------
+                    I                    I T <-toggle switch
+                    I  oo    oo     oo   I---
+                    I                    I  |
+                    I                    I---
+                    I   1    2     3     I B s <-two crystals(b=big,s=small)
+                    I                    I  |     in epoxy "blob"
+                    I   4    5     6     I _
+                    I                    I
+                    I   7    8     9     I  ^two wires running to back of unit
+                    I                    I
+                    I   *    0     #     I
+                    I                    I
+                    ----------------------
+
+                    ----------------------
+Back View ->        I                    I
+                 T  I  o      ----   o-----------------------vent (1 of 4)
+                --- I    /          \    I
+               |    I   |         -----------------speaker
+                --- I   |            |   I
+                s B I   |            |   I
+ 2 wires    ->   \-----o      ----   o   I
+ running into       I                    I
+ vent               I                    I
+                    I                    I
+                    I                    I
+                    I                    I
+                    ----------------------
+
+Make sure the epoxy is really gobbed on there. You want to be certain the
+switch and crystals are firmly attached and secure in a matrix of epoxy. The
+epoxy doesn't conduct electricity, so don't worry about shorting out the
+connections to the toggle switch. Just don't gum up the action of the switch!
+
+Basically, you've altered the device so you can select between 2 crystals to
+generate the timing for the microprocessor in the tone dialer.
+
+Now turn on the tone dialer NOW, you can easily switch between the 2 crystal
+types the small crystal will generate ordinary DTMF tones but, by simply
+flicking the switch, you generate HIGHER tones now, using the memory function
+of the tone dialer, save 5 "*" in the P1 location, now dial the P1 location
+using the BIG crystal, sure sounds like the tones for a QUARTER, doesn't it!
+
+Carry this around with you always. It will come in handy with both Telco
+payphones AND COCOTs! No Phreak should be without one! *(3)
+
+          c) The Radio Shack Tone Dialer Red/White Box via Mercury Switch
+
+     The best type of White/Red Box (a Red Box that also works as a key pad)
+uses a mercury switch.  You can order the mercury switch many electronics
+supply stores. The concept is simple.  When you are holding the Tone Dialer
+the normal way, it will work as a standard Tone Dialer (White Box). However,
+if you hold the thing upside down, it will work as a Red Box.  Not only does
+this add a little security for you (most cops would not hold the thing upside
+down), but it is also possible to use this device from COCOT phones (more on
+this later).
+     In order to make this device, open up the Radio Shack Tone Dialer but
+DO NOT touch the 3.579 crystal!  Leave the 3.579 crystal in its place. Now,
+place the mercury switch so that when you are holding the Tone Dialer upright,
+the 3.579 crystal will not be cut off.  Next, solder the Red Box crystal to
+the mercury switch.  If you hold the thing upside down, the mercury switch
+should cut off the 3.579 crystal and replace it with the Red Box crystal.
+Now all you have to do is put the Tone Dialer back together and program it.
+If for some reason you cannot get this to work, you can buy 2 switching
+diodes for roughly $0.20.  You can use these to isolate the two crystals
+fairly easilly. *(4)
+     If you cannot get the above method to work, you could try constructing
+it in a similar fashion to the way you would build the Box in Section B.
+However, you would substitute the Mercury switch in place of the toggle
+switch.  You should also find a place to mount your crystals on the inside
+of the Red Box rather than putting them on the outside.
+    Apparently, Radio Shack does not sell Mercury Switches anymore.  However,
+some people claim that there are old electronics supply stores that still
+have the Radio Shack Mercury switch.  If you are going to try and find the
+Radio Shack switch, it is model # 275-040.
+*   I would suggest, however, that you get them from a mail order
+place.  Two good places that come to mind are All Electronics
+(1-800-826-5432) and Hosfelt Electronics (1-800-524-6464).  I can't
+seem to find my All Electronics catalog, but Hosfelt's current catalog
+lists the following mercury switches:
+
+#51-234 Glass bulb mercury switch
+1" long x 1/4" dia. with 1-1/4" leads
+rated @ 750mA $.99
+
+#51-279 Glass bulb mercury switch
+1-1/8" long x 1/8" dia. with 1" leads
+rated @ 300mA $.99
+
+#51-180 Metal encapsulated mercury switch
+3/8" dia. x 13/16" long
+actuation angle 45 deg.
+rated @ 5A  $.99                          *(5)
+
+[ The UUENCODEd format of the Red Box GIF file. Is pasted to the end of this
+   FAQ. It is a color schematic which may help you out a bit when you open
+   up the Radio Shack Tone Dialer and start working on it.  To put it back
+   in GIF format, you must have either the DOS UUDECODE program or access to
+   the UNIX UUDECODE program. ]
+
+
+          c) The Hallmark Recordable Card Red Box
+*
+ Materials:
+
+    a) 1 Hallmark digital recording card
+    b) 1 1/8 inch mono phono plug
+    c) 2 insulated aligator clips (optional)
+    d) 1 SPST switch, or momentary contact NORMALLY CLOSED
+    e) The sound of magical quarter tones - you can get these from pay
+       phones, computer sound files (QUARTER.VOC is one), other red
+       boxes, tape recorders, etc.
+    f) A case of some sort (I used a case from a DAT, but anything you
+       can put the stuff in will work. Perhaps the case from a data tape
+       or an 8mm videotape, or just a cassette.)
+    g) A Tube of silicone sealant (epoxy will probably do, I just happened
+       to have silicone on hand)
+    h) Electrical wiring of at least two different colors (optional)
+
+ What To Do:
+
+1. Remove all components from the plastic thing inside the card. This
+   includes sliding the battery pack out of its drawer.
+
+2. Cut the following wires: (Colors of wires may be different! Mark where
+                             each one goes for reference.)
+     Both wires going to microphone (both are green, mark which one goes to
+     the center of the mike)
+     Both wires to the battery pack (red and white).  Mark where each of
+     these wires were connected on the battery pack or you may screw up
+     the polarity.
+     Both wires to the switch mechanism (green and black)
+
+2a. (optional)  It is a wise idea (if you are fairly experienced
+
+     at soldering/desoldering on small PC boards) to desolder all the wires
+     and replace them with ones of a thicker gauge. The ones that Hallmark
+     supplies are just too damn thin and have a real tendency to break at
+     connections. Remember, the wires in this are supposed to be protected
+     in the little plastic grooves that you removed them from.
+
+3. Discard the switch mechanism.
+
+4. Wrap the battery pack in electrical tape (I used red tape just to be
+   cheesy, since the box is clear).
+
+5. Solder the SPST switch to the black and green wires that used to go to
+   the original switch (polarity is not important).
+
+6. Solder the phono plug to the two green wires. Polarity shouldn't really
+   be important, but to be on the safe side, the wire that that went to the
+   center of the mike (I told you to mark it) should go to the TIP of the
+   plug.
+   If you are going to mass produce Hallmark Red Boxes, you should use the
+   aligator clip method to save time. Take two different wires and solder
+   each of them to one aligator clip. Then take the other ends of the wires
+   and solder them to them to the phono plug. Mark which one is soldered to
+   the tip.  In order to record the tone, plug the headphone jack into your
+   soundcard and attach the aligator clips to the two wires once running
+   to the microphone. This method will save you time and money if you are
+   planning to mass produce the Hallmark Red Box.
+
+7. Connect the battery (This battery pack puts out 6.25 V DC. I suppose
+   you could replace it with another battery, but why bother?)  Polarity
+   is extremely important! (Polarity is why you should mark them) The red wire
+   goes to the positive terminal, and the white goes to the negative.  On my
+   box, if the pack is lying flat, with the exposed part of the batteries
+   pointing up, the positive terminal is the one on the left (if you are
+   facing the terminals). I'd use a multimeter just to be sure.
+
+8. Glue the PC board to the top of the battery (this saves space and hassle
+   later, but is not necessary for operation).
+
+9. Program the thing.... I used the QUARTER.VOC file and I looped it 10
+   times, with a random delay of between .5 and 1 seconds between each
+   quarter (who puts them in at regular intervals anyway?) If you have this
+   file, plug the phono plug into your sound card, turn the volume way down
+   (trial and error will give you the proper volume) and play the VOC file
+   (after setting the switch on the PC board to the record position, and
+   flipping the SPST at the beginning of the VOC file).
+
+10. Test it....  Best way to test is to call long distance Directory
+    Assistance (I'm partial to 808-555-1212 which is Hawaii). If it doesn't
+    work, go back to step 9. The ideal volume is one that can be heard
+    clearly, but does not cause the speaker to break up.
+
+11. Once  you  have  the  thing programmed, there is no need to keep the
+    phono plug attached. If you want to save room, cut it off.
+
+12. Put the thing in the case. Drill several holes in the case where the
+    speaker will  mount.  I mounted the speaker with silicon very carefully
+    applied to the edges of the speaker. Same was true of the battery pack.
+    The switch obviously mounts in a hole on the side of the case.
+
+-Why the SPST Switch?
+
+ First off, I thought the switch that came with the thing looked really
+ cheaply made, and would probably break. Secondly, by putting in a switch
+ instead of a momentary switch, it allows me to record $2.50 on the box, and
+ play the whole thing back just by flipping the switch, rather than having
+ to hold it down.*(6)
+
+ [ For your ease, I have included the UUENCODEd formats of the QUARTER.VOC
+   file and a Quarter Tone for the Macintosh ( which can be used above in
+   place of QUARTER.VOC if you are a MAC user) at the end of this FAQ. If you
+   follow the above instructions, you will find it is easiest to use these
+   sound files with this type of Red Box.  Once again, you must use
+   UUDECODE in order to convert the file back to binary. ]
+
+
+          III. How much does a Red Box Cost?
+
+          a) The Cost to Construct a Red Box
+
+     The cost to construct a Red Box depends upon which type of Red Box you are
+going to build.  If you decide to build the Radio Shack Tone Dialer Red Box, th
+e
+parts are probably going to cost you between 20-35 dollars total.  Crystals
+are being sold for roughly $1.56 plus shipping and handling and the tone
+dialers are running between $15.00 and $25.00.  If you decide to build the
+Hallmark Recordable Card Red Box, it is going to cost you approximately 10
+dollars.
+
+          b) The Cost to Purchase a Red Box
+
+     If you decide to go out and purchase a Red Box from someone (and after
+reading this info, I don't know why you would), you are going to pay anywhere
+from between 50-200 dollars depending upon how much of a sucker you are.
+However, if you decide to sell the devices that you have made, you can make a
+lot of money.  I'll let you do the math.
+
+          IV. Is any Type of Red Box Better than Another?
+
+     The answer to this question depends upon what you are looking for.  The
+Hallmark Recordable Card Red Box is definitely cheaper to build.  Plus, if you
+sell this type of Red Box, you can still charge anywhere from between the above
+range and thus make about 15-20 dollars more per Red Box you sell.  However, it
+is not very durable.  After awhile, you are going to have to build another Red
+Box if you use this type.  Also, construction of the Hallmark Red Box may take
+longer if you do not record the tones at the right volume.  If the tones are to
+o
+quiet or so loud that they are distorted, your Red Box will not work. Thus, a
+lot of trial and error is involved with the Hallmark Recordable Card Red Box.
+     If you decide to build the Radio Shack Tone Dialer Red Box, you are going
+to have to shell out a few more bucks in order to get the parts to build it.
+Also, it is going to take awhile to get these parts because, most likely, you
+are going to have to mail order the Tone Dialer through Radio Shack and the
+crystal through a separate company.  However, once you have the parts, it is no
+t
+too hard to construct the box.  Also, you will not have to go through the same
+trial and error tests that you would with the Hallmark Red Box.  The Tone Diale
+r
+Red Box will simply work or not work.  Plus, the Radio Shack Tone Dialer Red Bo
+x
+is much more durable.  If you take care of the Tone Dialer Red Box, you may be
+able to use it until the Red Box becomes obsolete. Finally, it is possible for
+some Tone Dialers to be converted into Red Boxes while still having the
+capability to be used as a standard Tone Dialer (or White Box). This would give
+you the advantage of making a free call from a COCOT (more on this later).
+
+
+          V. How do I use a Red Box?
+
+     To actually use the Red Box is simple.  All you have to do is hold the
+speaker of the Red Box up to the receiver of the pay phone and press the button
+to create the tones.  However, when and why you use the Red Box will be
+different depending upon where you are making the phone call to.
+
+          a) Local Calls
+
+     Using a Red Box to make local calls can be rather difficult for the
+beginner.  However, there are many ways to do it.  The first way is to simply
+insert a nickel and then you can use your Red Box to do the rest.  However, I
+would not recommend that you use this method because there are other ways to
+make local calls for free.  Afterall, you did make the Red Box in order to make
+free calls right?
+*    The second way you can make a free local call is by dialing 411 or 555-
+1212. When the human operator comes on, ask them for the number of the person
+you are trying to call.  At this point, an automated operator will come on
+the line, tell you the number, and then tell you that if you press a number,
+the number will be dialed for an extra 35 cents.  Press the number and then
+use your Red Box.  Your call should go through.
+     The fourth way is to dial 10288 followed by the number you want to call.
+At this point, an automated operator will come on the line and tell you to
+deposit the money.  Use your Red Box now and your call should be put through.
+*(7)
+
+          b) Non-Local and Long Distance Calls
+
+     By far, these are the easiest calls to make.  All you have to do is dial
+the number you want to call.  Then an automated operator will get on the line
+and tell you to deposit money.  Hold your Red Box to the receiver, press the
+button, and you should have a nice phone call courtesy of the phone company.
+
+          c) International Calls
+
+*    These are relatively simple, but you are going to be hassled by the
+operator quite often during the call.  First, dial the number you want to call.
+A human operator will come on the line and ask you to deposit quite a bit of
+money.  The operator will then attempt to connect you to the number.  If
+the operator is successful, you will then be asked to insert even more money.
+Use your Red Box whenever the operator asks you for money.  Besides the fact
+that the operator will come on the line frequently, you should not have any
+other problems making this type of call with a Red Box. *(8)
+
+          VI. Can I Use my Red Box from my Home Phone?
+
+     No. No. No. Once again, NO!  There will be a bunch of people who will
+tell you that you can but the answer is no.  A Red Box will only work from
+a payphone.  There is no way to spoof the phone company into thinking that
+a standard home phone # is a payphone.  Also, if there was a way to do this,
+you'd have to be crazy or incredibly stupid to do it.  It would not take
+any time at all for the phone company to tell your phone was not a payphone.
+All they would have to do is come to your house and arrest you. However, there
+is no way for you to do this so do not spend time worrying about using a Red
+Box from home.
+
+          VII. Can I Call 1-900 Numbers With a Red Box?
+
+     No.  In fact, it is not possible to dial a 1-900 number on any payphone
+as far as I know.  When you dial a 1-900 number on a payphone, you should
+get the "Your call cannot be completed as dialed" message.  As a result,
+it is not possible for you to use a Red Box to make 1-900 calls.
+
+          VIII. Who is Billed for the Calls I Make With a Red Box?
+
+     Nobody is billed for the calls you make with a Red Box.  This is what
+makes Red Boxing so beautiful.  If you really want to know, the phone
+company is billed for the call.  However, most phone calls do not cost
+the phone company a penny.  Also, it is hard to feel guilty stealing a
+few cents from the phone company when they charge you hundreds of dollars
+a month for the same service. The phone company tries to disguise their greed
+by blaming fraudulent calls for the ever increasing cost of phone calls.  Do
+not buy into this lame guilt-trip and threat.  The phone company is always
+raising their fees.  As a result, the phone company is using the myth of
+an overwhelming number of fraudulent calls in order to make a profit.
+Thus, considering the phone company still makes a profit, nobody loses any
+money when you make a call using a Red Box.
+
+          IX. What is the Legality of Red Boxing?
+
+*    Title 18 of the United States Code section 1029 states that standard
+phreaking devices, such as blue boxes, used to steal phone service from [...]
+switches, are unquestionably "counterfeit access devices." It is not only
+illegal to use counterfeit access devices, but it is even illegal to
+build them. "Producing," "designing," "duplicating," or "assembling" [...]
+boxes are all federal crimes today, and if you do this, the Secret Service has
+been charged by Congress to come after you. *(9)
+     Basically, you have no legal rights to own a red box.  If you are caught
+with possession of a red box, you could be arrested on the spot whether or
+not you actually used it.  There is only one thing that can be said about
+Red Boxing due to this code... don't get caught.  There will be no excuse
+you can give for possessing a red box.  Think of it as the same as possessing
+illegal narcotics.
+
+          X. What are the Chances of Getting Caught Red Boxing?
+
+     There is not much of a chance that you are going to get caught using a Red
+Box.  However, since paranoia is a criminal's best friend (it does keep you
+free), you may want to take certain precautions. But overall, the odds of you
+getting caught are slim.
+     The only person who would have to worry about getting caught using a Red
+Box is the college student. It seems that most college students use Red Boxes
+to trim down their phone bill by calling their friends with it.  However,
+most people who use Red Boxes in college did not purchase or construct a
+Red Box until later in their college years.  As a result, they potentially
+have made many phone calls to their friends from their rooms already.
+Most colleges have their own telecommunications offices which keep a record
+of every call someone makes for billing purposes.  All of these records are
+kept on a computer.
+     If the phone company is able to determine which phone calls are being
+made with the Red Box, it would be very easy to catch the college student.
+The phone company could simply contact the college's telecommunications
+office and have them run a record search for the phone number called with
+the Red Box.  If a student made calls to a number from thier room and the
+same number was made from a payphone with a Red Box, it would be enough
+circumstantial evidence for the student to be investigated.  The lesson of
+this story is if you are a college student, do not use a Red Box to call
+phone numbers you have already called from your room.
+     Now along the lines of paranoia, a person who was once on a BBS I called
+WAS actually busted for Red Boxing.  Apparently, the phone that he used was
+being watched by the phone company because so many people had been Red Boxing o
+n
+it.  The kid I knew used this phone to make his phone call and used his real
+name while he was talking to the person.  A few days later, some police officer
+s
+showed up at his door to question the kid.  However, they did not have a warran
+t
+for his arrest or to search his home.  The moron got busted because when the
+cops asked him if he had used an illegal means to make the phone call from that
+one pay phone, he replied, "Yes."  This kid made a mistake because he admitted
+he was guilty.  If he had said no, the cops would have been forced to leave.
+The kid could then have trashed all evidence.  But this kid was a moron.
+     Basically, there are two ways to avoid this situation.  One is if the cops
+come to your home, do not tell them you did anything wrong.  The other is to
+simply not use your real name on a pay phone.  Keep in mind that this case is
+almost unheard of and is, most likely, NEVER going to happen to you.
+     The other paranoia, which actually makes a little more sense than the
+above, is involved in the purchasing of parts through Radio Shack.  Many people
+do not know why Radio Shack asks you for your name and home address when you
+purchase something from them.  Radio Shack claims it is so they can mail you
+things but I have never known anyone who has received any Radio Shack mailings.
+Anyways, when the Radio Shack clerk asks you for your name, just give him a
+fake.  Do not bother telling him you refuse to give him your name because it is
+a waste of time.  If you give him fake info or someone else's name, they will g
+o
+on record for purchasing the parts to a Red Box and you will not have to worry
+your little paranoid head.
+     Once again, I would like to stress that you must be extremely paranoid if
+either of the above REALLY worry you.  Neither are likely to cause you any
+problems and the validity of both stories are rather sketchy.
+
+          XI. I Put the Red Box Tones on Tape. It Does not Work. Why not?
+
+     If only the construction of a Red Box could be as simple as using
+a mini-tape recorder to record the tones off of your SB.  Unfortunately,
+this will not work due to the fact that tape recorders are Analog and not
+Digital.  As a result, when one tries to record the tones onto a tape, they
+will become too distorted and will no longer work.  The reason the Hallmark
+Recordable Card Red Box works is because it uses a Digital means of recording
+the tones.  Thus, if the sound volume is set right on the computer when
+playing the tones, they will not be distorted while recording.
+
+          XII. Will an HP48G Calculator Work as a Red Box?
+
+     No.  There are many devices that can produce a single tone.  However,
+this is why the HP48G Calculator and some other sound devices will not
+work as a Red Box.  The Red Box tones are two tones played together.  As
+a result, the calculator will not work because it is not able to produce
+both of these tones at the same time.
+
+          XIII. My Red Box does not Work from some Pay Phones. Why not?
+
+     My first response to this would be, "Have you tested the Red Box well and
+had any success with it at all?"  If not, your Red Box is a dud and you will
+have to start over.  However, if you have succeeded in making a call with it
+before, or unless you have tested it on either of the phones listed below, then
+it is not a faulty Red Box causing the problem.
+
+          a) COCOT Phones
+
+     If you are trying to use a Red Box on a COCOT (Customer Owned Coin Operate
+d
+Telephone), you can forget about it because it is not going to work.  This is
+due to the fact that these phones do not belong to the phone company.  They are
+privately owned telephones.  If you are curious as to whether or not you are
+using a COCOT, try dialing ANI on it.  Normally, this will give you a weird
+message or simply wont work which is an easy clue as to whether or not you are
+on a COCOT.
+     However, it is still possible to get free calls from a COCOT phone.  COCOT
+phones are where the Red and White Box roled into one is useful.  There is a
+fairly old trick which still seems to work today.  What you can do is dial an
+800 number and wait for a connection.  Once you get the connection, simply do
+not say anything and wait for the person on the other end to hang up.  After th
+e
+800 number has hung up on you, you should get a dial tone.  However, it is not
+possible for you to use the keypad of the pay phone to dial.  Instead, switch
+your Red Box over to White Box mode, hold it to the receiver and dial the numbe
+r
+on the Red/White Box keypad.  This should connect you to the number you have
+dialed.
+
+          b) Digital Pay Phones
+
+*    Digital pay phones are the new and improved pay phone. It is not possible
+for a Red Box to work on any digital pay phone.  It is the digital pay phone
+that will eventually cause the Red Box to become obsolete.  However, it is goin
+g
+to be an expensive and lengthy process for the phone company to convert every
+pay phone over to a digital pay phone so you should be able to use a Red Box fo
+r
+quite some time.  Needless to say, if you are trying to use a Red Box on a
+digital pay phone, it is not going to work. *(10)
+
+          c) Pay Phone/Phone # Flagging
+
+     It is very possible that the payphone you are using or the phone # you
+are trying to call has been flagged.  This happens when there is repeated
+abuse to a certain payphone or phone #.  Flagging can be unpredictable.
+The major paranoids will tell you that flagging will cause an operator to
+listen in on your call.  This may or may not be true.  However, the easiest
+way to determine if a phone or phone # has been flagged is to pick up the
+phone and dial the number.  If the number or phone is flagged, most times
+you simply will not reach ACTS.  Instead, a live operator will come on the
+line and ask how they can help.  As a result, you will never have the
+option of usng your Red Box.  If this happens, either insert real quarters
+or just hang-up the phone.  In a nutshell, if you do not reach ACTS when
+dialing a number, the phone or phone # is most likely flagged.
+
+          XIV. I Have a Really Cool Tone Program! Why Won't Every Tone Work?
+
+     Alright, even though some of you are probably asking "What does this
+have to do with Red Boxing?", I received a lot of mail asking about this so
+I decided to include the answer here.  First, the tones are not working
+because they are not Red Box tones.  Second, the other tones that you may have
+are potentially of no use to you from a payphone anymore.  Green Box tones
+no longer work so please stop asking if you can get the coin return tone
+to give you change.  Many of these tone programs are useless today depending
+upon where you live. However, I am not going to answer anymore questions
+that do not deal with Red Boxing so please do not ask anymore.
+
+
+          XV. Credits
+
+     As one can probably tell, I did not come up with most of this info.
+Everything you have read I learned through others while running a BBS or from
+people who wrote informational files.  The parts of this file that are enclosed
+in *'s and are followed by a number were works written by other people which I
+did not change much, if at all.  Below are the names of the people who wrote
+these files. Thanks for the info guys!
+
+
+(1) Clayton, Noah. "Converting a Tone Dialer into a Red Box" Reprinted, (c)
+
+         1990, 2600 Enterprises, Inc. Volume Seven, Number Three Autumn, 1990.
+
+         Typed by Havok Halcyon.
+
+(2) Spencer, Will. "The alt.2600/#hack FAQ version .010 Beta" 1995.
+
+(3) Count Zero. "COCOT Phones" 1991.
+
+(4) an224676@anon.penet.fi "Switchable Red Box" 1995.
+
+(5) positron@ix.netcom.com (Positron) "Re: Mercury Switches?" 1995.
+
+(6) Toxic Avenger. "The Ten Dollar Red Box" 1994.
+
+(7) Spencer, Will. "The alt.2600/#hack FAQ version .010 Beta" 1995.
+
+(8) The New York Hack Exchange BBS. "The Art of Red Boxing" 1992.
+
+(9) jjetton@delphi.com. "Re: Red box Legality?" 1995.
+
+(10) The New York Hack Exchange BBS. "The Art of Red Boxing" 1992.
+
+          XVI. Conclusion
+
+     This wraps up the latest release of the Red Box FAQ file.  I hope some
+people will actually read this damn thing and not ask questions covered in this
+file.  If you have any corrections or new ideas you would like to see
+covered in this FAQ, please send me E-Mail at an132432@anon.penet.fi.  However,
+DO NOT send me questions.  Also, PLEASE use PGP to encrypt your messages to
+me.  If you do not encrypt them, I will probably ignore them.  If the question
+is not covered in the FAQ, then post it to alt.2600.  You will be more likely
+to get a response from there.  Anyways, hope you enjoyed this FAQ, and in the
+words of Alfred E. Neuman, "Nowadays, the perfect crime is getting caught
+and then selling your story to TV!" Remember those words, Mitnick!
+
+                                             Hasta,
+                                                  Mr. Sandman
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: 2.3a
+
+mQCNAi9Bc44AAAEEALD9Tyuu+YTIy2F8nmIGjABpAwD5YVXRzR3nGOZuZeKdtkyu
+9k4vDTdaoVQsm/kzjA3MTNurd0Q6woE8+jBIsFwwrb3jyq9tTPY+Z1fH+AjN5rwS
+GZpndp4qFWSzSboMtX5XNlZ659I3ib8t9jIEko9nQRwPQepSHk2vJDMZL9dFAAUR
+tCRNci4gU2FuZG1hbiA8YW4xMzI0MzJAYW5vbi5wZW5ldC5maT4=
+=txl2
+-----END PGP PUBLIC KEY BLOCK-----
+
